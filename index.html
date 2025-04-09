@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASHA AI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400;500;600;700&display=swap">
+</head>
+
+<body>
+    <nav> 
+        <header class="logo">
+            <a href="#">ASHA AI</a>
+        </header>
+    
+    <div class="nav-bar">
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">About</a>
+    </div>
+</nav>
+        <div class="heading">
+            <h1>Welcome to Asha AI</h1>
+            <p>Empowering AI Innovation</p>
+        </div>
+    
+    <div class="container">
+        <p class="quote">Celebrating Women Driving the Future of AI</p>
+        <div class="card-grid">
+            <div class="card">
+                <br />
+                <h2>Mentorship Program</h2>
+                <p>Join expert-led mentorship sessions to enhance your skills.</p>
+            </div>
+            <div class="card">
+                <br />
+                <h2>Live Sessions</h2>
+                <p>Attend real-time discussions and technical workshops.</p>
+            </div>
+            <div class="card">
+                <br />
+                <h2>Job Listings</h2>
+                <p>Explore AI-related job opportunities and internships.</p>
+            </div>
+            <div class="card">
+                <br />
+                <h2>Community Events</h2>
+                <p>Participate in AI networking and knowledge-sharing events.</p>
+            </div>
+            <div class="card">
+                <br />
+                <h2>Networking</h2>
+                <p>Connect with industry professionals and fellow innovators.</p>
+            </div>
+        </div>
+        <br />
+        <button class="register-btn">Register Now</button>
+    </div>
+    <div class="About">
+        <h1>Meet The Team Behind Our Project</h1>
+        <ul>
+            <li>Riya Shukla
+                <br>Engineering Student.
+            </li>
+            <li>Aishwarya Bagi
+                <br>Engineering Student.
+            </li>
+            <li>Dhanushree Shende
+                <br>Engineering Student.
+            </li>
+            <li>Srushti Kochare
+                <br>Engineering Student.
+            </li>
+        </ul>
+    </div>
+    <!-- Chatbot button -->
+    <button class="chatbot-btn" onclick="toggleChatbot()">💬</button>
+
+    <!-- Chatbot container -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <span>Empowerment Assistant</span>
+            <button onclick="toggleChatbot()">×</button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="message bot-message">
+                Hello! I'm your empowerment assistant. How can I help you today?
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="userInput" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">→</button>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
