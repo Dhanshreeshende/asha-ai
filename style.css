@@ -1,0 +1,314 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Reset default margin/padding */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+nav {
+  display: flex;
+  justify-content: space-between; /* Pushes logo left & nav-links right */
+  align-items: center; /* Vertically centers items */
+  background: white;
+  padding: 1rem 2rem;
+}
+
+/* Logo styling */
+.logo a {
+  color: purple;
+  font-size: 2rem;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Navigation links styling */
+.nav-bar {
+  display: flex;
+  gap: 4rem; /* Spacing between links */
+  margin-right:23px;
+}
+
+.nav-bar a {
+  color:purple;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.heading{
+  background-color: orange;
+  align-items: center;
+  text-align: center;
+  padding:20px 20px;
+  height: 50vh;
+}
+.heading h1{
+  font-size: 50px;
+}
+.heading p{
+  font-size: 20px;
+  color:gray;
+
+}
+
+  .container {
+    background-color: rgba(0, 0, 0, 0.65); 
+    padding: 40px 40px;
+    max-width: 12000px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+    100% {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+  }
+  
+  p {
+    font-size: 1.25rem;
+    margin-top: 8px;
+    color:orange;
+  }
+  
+  .quote {
+    font-style: italic;
+    font-size: 2rem;
+    color: #fcd34d;
+    margin-bottom: 24px;
+  }
+  
+  .card-grid {
+    display: row;
+    margin-bottom: 2rem;
+    gap: 12rem;
+  }
+  
+  .card {
+    background-color: white;
+    color: #111827;
+    padding: 32px;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    margin-bottom: 33px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  button.register-btn {
+    background-color: #facc15;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.125rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  button.register-btn:hover {
+    background-color: #eab308;
+  }
+  /* === Team Section Styling === */
+.About {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9; /* Light gray background */
+}
+
+.About h1 {
+  font-size: 2.5rem;
+  color: #2c3e50; /* Dark blue-gray */
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+}
+
+.About h1::after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 3px;
+  background: #3498db; /* Blue accent line */
+  bottom: -10px;
+  left: 15%;
+}
+
+.About ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.About li {
+  background:black;
+  padding: 1.5rem;
+  border-radius: 8px;box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.About li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.About li br {
+  display: block;
+  margin: 0.5rem 0;
+}
+.chatbot-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #4e8cff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.chatbot-btn:hover {
+  background-color: #3a7aed;
+  transform: scale(1.1);
+}
+
+/* Chatbot container styles */
+.chatbot-container {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  width: 350px;
+  height: 500px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+
+.chatbot-container.visible {
+  display: flex;
+}
+
+/* Chatbot header */
+.chatbot-header {
+  background-color: #4e8cff;
+  color: white;
+  padding: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatbot-header button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Chatbot messages area */
+.chatbot-messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.message {
+  margin-bottom: 15px;
+  max-width: 80%;
+  padding: 10px 15px;
+  border-radius: 18px;
+  line-height: 1.4;
+  position: relative;
+}
+
+.bot-message {
+  background-color: #e6e6e6;
+  color: #333;
+  align-self: flex-start;
+  border-bottom-left-radius: 5px;
+}
+
+.user-message {
+  background-color: #4e8cff;
+  color: white;
+  align-self: flex-end;
+  margin-left: auto;
+  border-bottom-right-radius: 5px;
+}
+
+/* Chatbot input area */
+.chatbot-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #e0e0e0;
+  background-color: white;
+}
+
+.chatbot-input input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  font-size: 14px;
+}
+
+.chatbot-input button {
+  background-color: #4e8cff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.chatbot-input button:hover {
+  background-color: orange;
+}
+
+/* Simple animation for messages */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.message {
+  animation: fadeIn 0.3s ease;
+}
